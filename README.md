@@ -39,8 +39,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![]http://g.recordit.co/IOdCWsz4wL.gif
-<img src="http://g.recordit.co/IOdCWsz4wL.gif" width=500> 
+![]http://g.recordit.co/5wD97v7Grn.gif
+<img src="http://g.recordit.co/5wD97v7Grn.gif" width=500> 
 
 
 ## Reflection Questions
@@ -55,6 +55,7 @@ I struggled in making the pattern random and in reading in the input from the HT
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 I enjoyed working through the logic of the flow chart, particularly in writing out my own diagram. Because this function’s logic is a specific part of the development process, it made me wonder how teams work together on full-stack web-development projects. How do they distribute work and move along the development process? When I worked on a website for a client for a past internship, I learned about the iterative design cycle and AGILE development. However, I only worked on building the website based off of wireframes I received from other team members. We had a little contribution to the wireframes, discussing what was feasible and not, but, other than that, the entire process felt like we were passing along work from one group to another. I’m interested in seeing what it is like being more deeply involved in all parts of a web-development project. 
 	I’m also wondering what this looks like for a career. Which is more common, for people to work on full-stack web-development or to specialize in a part of web-development? What are reasons to choose one over the other? Which would I be better fit for and enjoy more?
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 I enjoyed working through the logic of the guess() function. If I had more time, I would work through the logic of all of the functions to see if there is a more efficient way of implementing them or perhaps in a way that would make it easier to add other features to the game. 
