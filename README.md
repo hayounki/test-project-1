@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 ![]http://g.recordit.co/IOdCWsz4wL.gif
-<img src="http://g.recordit.co/IOdCWsz4wL.gif" width=500>
+<img src="http://g.recordit.co/IOdCWsz4wL.gif" width=500> 
 
 
 ## Reflection Questions
@@ -50,6 +50,7 @@ W3Schools
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 I struggled with handling the guess function logic. At first, I thought that the function would need to use a loop to run through the pattern to play and check the guess. Reading more closely, I noticed that the onclick attributes for each button meant that the guess(btn) would be called each time a button was clicked. 
 The next challenge was understanding the logic of the flow chart. I didn’t understand what the end of a “turn” and “last turn” meant. I couldn’t figure it out from re-reading the spec, so I started writing out a diagram/pseudocode-of-sorts. As I did this, I understood that a “turn” meant a sequence of clues played, so the guessCounter needed to match the progress to end a turn, and the “last turn” happened when all of the clues had been played, so we reached the end of the pattern.
+I struggled in making the pattern random and in reading in the input from the HTML to adjust the pattern length. For help on this, I went on W3Schools, played with the code on there, and adjusted it for the purposes of this game. Reading in the input was difficult because I didn’t know how to direct the data from the HTML input to the JavaScript. Their input examples directed code to an external file. Instead, I had to access the form field from with JavaScript.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 I enjoyed working through the logic of the flow chart, particularly in writing out my own diagram. Because this function’s logic is a specific part of the development process, it made me wonder how teams work together on full-stack web-development projects. How do they distribute work and move along the development process? When I worked on a website for a client for a past internship, I learned about the iterative design cycle and AGILE development. However, I only worked on building the website based off of wireframes I received from other team members. We had a little contribution to the wireframes, discussing what was feasible and not, but, other than that, the entire process felt like we were passing along work from one group to another. I’m interested in seeing what it is like being more deeply involved in all parts of a web-development project. 

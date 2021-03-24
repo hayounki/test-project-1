@@ -5,6 +5,7 @@ const nextClueWaitTime = 500; //how long to wait before starting playback of the
 
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var patternLen = 8;
 var progress = 0;
 var gamePlaying = false;
 var gamePlaying = false;
@@ -12,10 +13,27 @@ var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
 
+function getGameLen() {
+  patternLen = document.getElementById("gameLen").value;
+  document.getElementById("printGameLen").innerHTML = patternLen;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function makePattern() {
+  for(let i=0;i<=8;i++){
+    pattern[i] = getRandomInt(5) + 1;
+  }
+}
+
 function startGame() {
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  
+  makePattern();
 
   //swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -39,7 +57,8 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 518.1
+  4: 518.1,
+  5: 550
 };
 function playTone(btn, len) {
   o.frequency.value = freqMap[btn];
@@ -105,7 +124,7 @@ function guess(btn){
   
   if (pattern[guessCounter] == btn){
     if (guessCounter == progress){
-      if (progress == pattern.length - 1){ winGame(); } 
+      if (progress == patternLen - 1){ winGame(); } 
       else{
         progress++;
         playClueSequence();
